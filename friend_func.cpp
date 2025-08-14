@@ -6,6 +6,7 @@ class base;
 
 // Another class in which function is declared
 class GFG {
+    int add(int a, int b);
 public:
     void GFG_Function(base& obj);
 };
@@ -28,6 +29,10 @@ public:
     // Friend function declaration
     friend void GFG::GFG_Function(base&);
 };
+
+int GFG::add(int a, int b) {
+    return a + b;
+}
 
 // Friend function definition
 void GFG::GFG_Function(base& obj) {
