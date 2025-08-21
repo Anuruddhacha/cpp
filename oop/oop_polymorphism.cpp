@@ -8,6 +8,11 @@ public:
         cout << "Base class constructor" << endl;
      }
 
+     ~Base()
+     {
+        cout << "Base class destructor" << endl;
+     }
+
     // Virtual function
     virtual void display() {
         cout << "Base class function";
@@ -36,7 +41,6 @@ int main() {
   ptrBase = &derived;
 
   ptrBase->display();
-
 
 
     return 0;

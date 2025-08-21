@@ -23,13 +23,16 @@ public:
 };
 
 int main() {
-    Shape* s1 = new Circle();
-    Shape* s2 = new Rectangle();
 
-    s1->draw();
-    s2->draw();
 
-    delete s1;
-    delete s2;
+    Shape* _ptrCircle = new Circle();
+    _ptrCircle->draw();
+
+    Shape* _ptrRectangle = new Rectangle();
+    _ptrRectangle->draw();
+
+
+    delete _ptrCircle;
+    delete _ptrRectangle;
     return 0;
 }
